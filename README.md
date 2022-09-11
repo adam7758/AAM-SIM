@@ -5,10 +5,9 @@ The simulation tool, AAM-SIM, is developed to simulate the operational process o
 The main command file for AAM-SIM tool is 'SimulationPlatform.py', which calls for functions to update vertiport, aircrafts and passengers status for each time step of simulation. The tool user can also adjust parameters such as time unit for each simulation step and simulation horizon according to their needs.
 
 # Numerical Example
-There is data for numerical study of Tampa Bay region in Florida. The input data includes 'dist.npy', 'Inputs.py', 'OD_arrivals.npy', 'pair_weight.npy' and the folder named 'Demand'. There is also default setting for eVTOL performance parameter in the file 'Entity.py'. 
-'Inputs.py' -- initial parameter setting for the network, including initial number of aircrafts, TOFL and staging pads at each vertiport.
-'dist.py' -- distance matrix of the vertiport.
-'OD_arrivals.npy' -- number of arrivals for each vertiport.
+There is data for numerical study of Tampa Bay region in Florida. The input data includes 'dist.npy', 'Inputs.py', 'OD_arrivals.npy', 'pair_weight.npy' and the folder named 'Demand'. There is also default setting for eVTOL performance parameter in the file 'Entity.py'. Specifically, the data required for each input is as follows: 'Inputs.py' -- initial parameter setting for the network, including initial number of aircrafts, TOFL and staging pads at each vertiport;
+'dist.py' -- distance matrix of the vertiport;
+'OD_arrivals.npy' -- number of arrivals for each vertiport;
 'pair_weight.npy' -- route demand weight for each pair of vertiport.
 
 # Demand generator
