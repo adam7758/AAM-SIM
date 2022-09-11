@@ -1,14 +1,11 @@
 # AAM-SIM
-The simulation tool, AAM-SIM, is developed to simulate the operational process of eVTOLs over vertiport network while satisfying potential passenger demand. The detailed description of the tool is summarized in 'Simulation Tool Summary.pdf'. Briefly speaking, given UAM network and potential passenger demand, AAM-SIM defines the operational rules of eVTOLs and dispatch them arocss vertiports in the network to transportation passengers from origins to their destinations. AAM-SIM is able to provide us insignts including but not limited to eVTOL operation characteristics, UAM network bottle necks, service quality and system energy requirements. 
+The simulation tool, AAM-SIM, is developed to simulate the operational process of eVTOLs over vertiport network while satisfying potential passenger demand. The detailed description of the tool is summarized in 'Simulation Tool Summary.pdf'. Briefly speaking, given UAM network and potential passenger demand, AAM-SIM defines the operational rules of eVTOLs and dispatch them arocss vertiports in the network to transport passengers from their origins to destinations. AAM-SIM is able to provide us insignts including but not limited to eVTOL operation characteristics, UAM network operation bottle necks, service quality and system energy requirements. 
 
 # main command file
-The main command file for AAM-SIM tool is 'SimulationPlatform.py', which calls for functions to update vertiport, aircrafts and passengers status for each time step of simulation. The tool user can also adjust parameters such as time unit for each simulation step and simulation horizon according to their needs.
+The main command file for AAM-SIM tool is 'SimulationPlatform.py', which commits the command for the entire simulation run and calls for functions to update vertiport, aircrafts and passengers status for each time step of simulation. The tool user can also adjust parameters such as time unit for each simulation step and simulation horizon according to their needs.
 
 # Numerical Example
-There is data for numerical study of Tampa Bay region in Florida. The input data includes 'dist.npy', 'Inputs.py', 'OD_arrivals.npy', 'pair_weight.npy' and the folder named 'Demand'. There is also default setting for eVTOL performance parameter in the file 'Entity.py'. Specifically, the data required for each input is as follows: 'Inputs.py' -- initial parameter setting for the network, including initial number of aircrafts, TOFL and staging pads at each vertiport;
-'dist.py' -- distance matrix of the vertiport;
-'OD_arrivals.npy' -- number of arrivals for each vertiport;
-'pair_weight.npy' -- route demand weight for each pair of vertiport.
+There is data for numerical study of Tampa Bay region in Florida. The input data files include 'dist.npy', 'Inputs.py', 'OD_arrivals.npy', 'pair_weight.npy' and the folder named 'Demand'. There is also default setting for eVTOL performance parameter in the file 'Entity.py'. Specifically, 'Inputs.py' defines initial parameter setting for the network, including initial number of aircrafts, TOFL and staging pads at each vertiport; 'dist.npy' represent distance matrix of the vertiport;'OD_arrivals.npy' indicates number of arrivals for each vertiport; 'pair_weight.npy' contains route demand weight for each pair of vertiport.
 
 # Demand generator
 The file 'DemandGenerator.py' includes function to generate passenger arrivals at each vertiport, generating both overall distribution as well as exact arrivals.
