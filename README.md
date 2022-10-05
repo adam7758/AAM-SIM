@@ -7,6 +7,9 @@ The simulation tool, AAM-SIM, is developed to simulate the operational process o
 # Main command file
 The main command file for AAM-SIM tool is 'SimulationPlatform.py', which commits the command for the entire simulation run and calls for functions to update vertiport, eVTOL and passenger status for each timestamp of the simulation. The tool user can adjust time unit and simulation horizon according to their needs.
 
+# Object Definition
+The three objects (user, aircraft and vertiport) in the simulation tool are defined in 'Entitiy.py', where attributes of each object are included. There are some default values as well as variable values for each corresponding object. The later may change in the simulation process while the default values can be defined by users according to their needs.
+
 # Demand generator
 The file 'DemandGenerator.py' includes function to generate passenger arrivals at each vertiport, generating both overall distribution as well as exact arrivals.
 
